@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap");
+/* ----------------------------------VARIAVEIS---------------------------------- */
+/* ----------------------------------STYLE---------------------------------- */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #02030F;
+  font-family: "Poppins", sans-serif;
+  color: #f8f8f8;
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+  width: 100vw; }
+
+aside {
+  display: flex;
+  align-items: center; }
+  aside img {
+    width: auto;
+    height: 100vh;
+    margin-left: 2rem; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 50vw; }
+  main .title {
+    font-size: 3.5rem;
+    font-weight: 100;
+    text-align: center; }
+    main .title span {
+      font-weight: 300; }
+  main .cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #43AFEC;
+    border-radius: 20px;
+    width: 20rem;
+    height: 25rem; }
+    main .cadastro .sub-title {
+      text-align: center;
+      width: 18rem;
+      height: auto;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 400;
+      font-size: 1.2rem; }
+    main .cadastro input {
+      width: 15rem;
+      height: 3rem;
+      border: 0;
+      border-radius: 10px;
+      margin-bottom: 1.0rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300; }
+    main .cadastro label {
+      font-size: 0.90rem; }
+  main .go-to-website {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+    width: 15rem;
+    height: auto; }
+
+@media screen and (max-width: 1366px) {
+  body {
+    height: 100vh; }
+  main .title {
+    font-size: 2.5rem;
+    text-align: center;
+    width: 30rem; }
+  main .cadastro {
+    width: 16rem;
+    height: 20rem;
+    margin-top: 1rem; }
+    main .cadastro .sub-title {
+      text-align: center;
+      width: 16rem;
+      height: auto;
+      font-size: 1.0rem; }
+    main .cadastro input {
+      width: 12rem;
+      height: 3rem; }
+    main .cadastro button {
+      width: 12rem; }
+    main .cadastro label {
+      font-size: 0.8rem; }
+  main .go-to-website {
+    width: 12rem;
+    height: auto; } }
+
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 5rem; }
+  aside {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  main {
+    display: flex;
+    align-items: center; }
+    main .cadastro {
+      margin-top: 2.5rem; }
+    main .go-to-website {
+      margin: 0;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem; } }
+
+button {
+  width: 240px;
+  height: 48px;
+  border: 0;
+  border-radius: 10px;
+  margin-top: 1.0rem;
+  margin-bottom: 2.0rem;
+  background-color: #43AFEC;
+  color: #f8f8f8;
+  font-size: 0.9rem; }
+  button:hover {
+    cursor: pointer;
+    filter: brightness(1.2); }

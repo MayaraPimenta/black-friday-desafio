@@ -1,0 +1,200 @@
+/* ----------------------------------VARIAVEIS---------------------------------- */
+$font-family: 'Poppins', sans-serif;
+
+$thin-weight: 100;
+$light-weight: 300;
+$regular-weight: 400;
+
+$background-color: #02030F;
+$purple-color: #43AFEC;
+$yellow-color: #F26A21;
+$white-color: #f8f8f8;
+
+
+/* ----------------------------------STYLE---------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:  $background-color;
+    font-family: $font-family;
+    color: $white-color;
+
+    display: flex;
+    align-items: stretch;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+aside {
+    display: flex;
+    align-items: center;
+    
+    img {
+        width: auto;
+        height: 100vh;
+
+        // margin-top: 4rem;
+        margin-left: 2rem;
+      }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50vw;
+
+    .title {
+        font-size: 3.5rem;
+        font-weight: $thin-weight;
+        text-align: center;
+
+        span {
+            font-weight: $light-weight;
+        }
+    }
+
+    .cadastro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        border: 3px solid $purple-color;
+        border-radius: 20px;
+        width: 20rem;
+        height: 25rem;
+
+        .sub-title {
+            text-align: center;
+            width: 18rem;
+            height: auto;
+
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+
+            font-weight: $regular-weight;
+            font-size: 1.2rem;
+        }
+
+        input {
+            width: 15rem;
+            height: 3rem;
+            border: 0;
+            border-radius: 10px;
+
+            margin-bottom: 1.0rem;
+
+            font-family: $font-family;
+            font-weight: $light-weight;
+        }
+
+        label {
+            font-size: 0.90rem;
+        }
+    }
+
+    .go-to-website {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 0.8rem;
+        font-weight: $light-weight;
+
+        width: 15rem;
+        height: auto;
+    }
+}
+
+// ----------------------------------RESPONSIVIDADE----------------------------------
+
+@media screen and (max-width: 1366px) {
+
+    body {
+        height: 100vh;
+    }
+
+    main {
+            
+        .title {
+            font-size: 2.5rem;
+            text-align: center;
+            width: 30rem;
+        }
+    
+        .cadastro {
+            width: 16rem;
+            height: 20rem;
+            margin-top: 1rem;
+    
+            .sub-title {
+                text-align: center;
+                width: 16rem;
+                height: auto;
+
+                font-size: 1.0rem;
+            }
+    
+            input {
+                width: 12rem;
+                height: 3rem;
+            }
+
+            button {
+                width: 12rem;
+            }
+    
+            label {
+                font-size: 0.8rem;
+            }
+        }
+    
+        .go-to-website {
+            width: 12rem;
+            height: auto;
+            
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    aside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        
+        .cadastro {
+            margin-top: 2.5rem;
+        }
+
+        .go-to-website {
+            margin: 0;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+

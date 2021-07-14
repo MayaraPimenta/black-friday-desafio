@@ -1,0 +1,19 @@
+button {
+    width: 240px;
+    height: 48px;
+    border: 0;
+    border-radius: 10px;
+
+    margin-top: 1.0rem;
+    margin-bottom: 2.0rem;
+
+    background-color: $purple-color;
+    color: $white-color;
+
+    font-size: 0.9rem;
+
+    &:hover {
+        cursor: pointer;
+        filter: brightness(1.2);
+    }
+}
