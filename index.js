@@ -8,6 +8,7 @@ const router = express.Router();
 app.set('view engine', 'html');
 app.use('/css', express.static(path.join(__dirname, 'css')));
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
+app.use('/scripts', express.static(path.join(__dirname, 'scripts')));
 
 router.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, 'pages/index.html'));
