@@ -9,12 +9,11 @@ function submit() {
         swal({
             text: "Email já cadastrado!",
             button: false
-        })}
-    if (username === "" || email === "") {
+        })} else if (username === "" || email === "") {
         swal({
             text: "O Nome ou E-mail está em branco!",
             button: false
-        })}   
+        })} else {
 
     user = {
         id: users.length + 1,
@@ -30,6 +29,7 @@ function submit() {
     })
 
     cleanField()
+    }
 }
 
 function cleanField() {

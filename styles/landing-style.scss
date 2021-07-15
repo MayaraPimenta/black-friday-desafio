@@ -27,8 +27,7 @@ body {
     align-items: stretch;
 
     height: 100vh;
-    width: 100vw;
-
+    width: auto;
     
 }
 
@@ -38,7 +37,7 @@ aside {
     
     img {
         width: auto;
-        height: 100vh;
+        height: 85vh;
 
         // margin-top: 4rem;
         margin-left: 2rem;
@@ -124,6 +123,18 @@ main {
     }
 }
 
+.disclaimer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 0.5rem;
+    
+    background: black;
+
+    font-size: 0.6rem;
+    font-weight: 100;  
+    text-align: center;
+}
 
 
 // ----------------------------------RESPONSIVIDADE----------------------------------
@@ -155,12 +166,12 @@ main {
             }
     
             input {
-                width: 10rem;
+                width: 12rem;
                 height: 3rem;
             }
 
             button {
-                width: 10rem;
+                width: 12rem;
                 font-size: 0.8rem;
             }
     
@@ -172,6 +183,7 @@ main {
         .go-to-website {
             width: 12rem;
             height: auto;
+            margin-bottom: 1.5rem;
             
         }
     }
@@ -183,7 +195,6 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
 
         padding-left: 5rem;
         padding-right: 5rem;
@@ -193,11 +204,17 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        
     }
 
     main {
         display: flex;
         align-items: center;
+
+        .title {
+            margin-top: 1rem;
+        }
         
         .cadastro {
             margin-top: 2.5rem;

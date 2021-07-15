@@ -12,14 +12,14 @@ body {
   display: flex;
   align-items: stretch;
   height: 100vh;
-  width: 100vw; }
+  width: auto; }
 
 aside {
   display: flex;
   align-items: center; }
   aside img {
     width: auto;
-    height: 100vh;
+    height: 85vh;
     margin-left: 2rem; }
 
 main {
@@ -75,6 +75,16 @@ main {
     main .go-to-website:hover {
       filter: brightness(0.8); }
 
+.disclaimer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 0.5rem;
+  background: black;
+  font-size: 0.6rem;
+  font-weight: 100;
+  text-align: center; }
+
 @media screen and (max-width: 1366px) {
   body {
     height: 100vh; }
@@ -91,23 +101,23 @@ main {
       height: auto;
       font-size: 0.9rem; }
     main .cadastro input {
-      width: 10rem;
+      width: 12rem;
       height: 3rem; }
     main .cadastro button {
-      width: 10rem;
+      width: 12rem;
       font-size: 0.8rem; }
     main .cadastro label {
       font-size: 0.8rem; }
   main .go-to-website {
     width: 12rem;
-    height: auto; } }
+    height: auto;
+    margin-bottom: 1.5rem; } }
 
 @media screen and (max-width: 768px) {
   body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding-left: 5rem;
     padding-right: 5rem; }
   aside {
@@ -117,6 +127,8 @@ main {
   main {
     display: flex;
     align-items: center; }
+    main .title {
+      margin-top: 1rem; }
     main .cadastro {
       margin-top: 2.5rem; }
     main .go-to-website {
