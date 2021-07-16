@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm-run-all -p -r path sass",
-    "path": "nodemon index.js",
+    "path": "node index.js",
     "sass": "node-sass --watch styles/main.scss css/style.css"
   },
   "repository": {
