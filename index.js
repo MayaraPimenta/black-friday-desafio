@@ -16,4 +16,4 @@ router.get('/', function(req, res) {
 
 app.use('/', router);
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
