@@ -155,7 +155,7 @@ main .go-to-website:hover {
   aside img {
     width: 150%;
     height: auto;
-    margin: 0;
+    margin: 0rem;
   }
 
   main {
@@ -163,16 +163,18 @@ main .go-to-website:hover {
     align-items: center;
   }
   main .title {
-    margin-top: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 0rem;
     font-size: 1.8rem;
     width: auto;
   }
   main .cadastro {
-    margin-top: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 0rem;
   }
   main .go-to-website {
     margin: 0;
-    margin-top: 1.5rem;
+    margin-top: 3rem;
     margin-bottom: 2.5rem;
   }
 }
